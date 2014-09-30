@@ -1,0 +1,762 @@
+/!\ FAILSAFE /!\  Tue Sep 30 09:43:31 -0500 2014
+  Status: 500 Internal Server Error
+  Unknown database 'dnsrecords'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/mysql_adapter.rb:620:in `real_connect'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/mysql_adapter.rb:620:in `connect'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.15/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.15/lib/action_controller/string_coercion.rb:25:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.15/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.15/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.15/lib/action_controller/failsafe.rb:26:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.15/lib/action_controller/dispatcher.rb:114:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.15/lib/action_controller/reloader.rb:34:in `run'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.15/lib/action_controller/dispatcher.rb:108:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.15/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.15/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (48.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (149.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (183.6ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHosts (20140930143957)
+  [4;36;1mSQL (78.5ms)[0m   [0;1mCREATE TABLE `hosts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `direccion` varchar(255), `descripcion` varchar(255), `ubicacion` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (33.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20140930143957')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `hosts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `hosts`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 09:44:06) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 3ms (View: 3, DB: 1) | 401 Unauthorized [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 09:44:16) [GET]
+  [4;36;1mHost Load (0.3ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#new (for 127.0.0.1 at 2014-09-30 09:44:19) [GET]
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 29ms (View: 25, DB: 1) | 200 OK [http://localhost/hosts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#create (for 127.0.0.1 at 2014-09-30 09:44:41) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"nWEzJrlO0C/ckRP0m93uFTGOLkVmL2IIauJgtM3+A4M=", "host"=>{"ubicacion"=>"Zona Altos", "descripcion"=>"San Cris", "direccion"=>"192.168.10.1"}}
+  [4;36;1mHost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mHost Create (41.8ms)[0m   [0;1mINSERT INTO `hosts` (`descripcion`, `ubicacion`, `direccion`, `created_at`, `updated_at`) VALUES('San Cris', 'Zona Altos', '192.168.10.1', '2014-09-30 14:44:41', '2014-09-30 14:44:41')[0m
+  [4;35;1mSQL (202.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/hosts/1
+Completed in 252ms (DB: 245) | 302 Found [http://localhost/hosts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#show (for 127.0.0.1 at 2014-09-30 09:44:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (16.2ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 28ms (View: 7, DB: 17) | 200 OK [http://localhost/hosts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 09:44:43) [GET]
+  [4;36;1mHost Load (0.3ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/hosts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#show (for 127.0.0.1 at 2014-09-30 09:44:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.1ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://localhost/hosts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#show to xml (for 127.0.0.1 at 2014-09-30 09:44:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.1ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Completed in 105ms (View: 98, DB: 2) | 200 OK [http://localhost/hosts/1.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#show to json (for 127.0.0.1 at 2014-09-30 09:44:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.1ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Completed in 5ms (View: 0, DB: 1) | 406 Not Acceptable [http://localhost/hosts/1.json]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 09:46:48) [GET]
+  [4;36;1mHost Load (0.6ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 26ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 09:46:58) [GET]
+  [4;36;1mHost Load (0.1ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/hosts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2014-09-30 09:47:00) [GET]
+  [4;36;1mHost Load (0.1ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/hosts.xml]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index to json (for 127.0.0.1 at 2014-09-30 09:47:04) [GET]
+  [4;36;1mHost Load (0.1ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://localhost/hosts.json]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#show (for 127.0.0.1 at 2014-09-30 09:53:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.1ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/hosts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#show to json (for 127.0.0.1 at 2014-09-30 09:53:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.1ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/hosts/1.json]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (14.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHosts (20140930143957)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `hosts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `hosts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (67.2ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (150.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHosts (20140930143957)
+  [4;36;1mSQL (56.5ms)[0m   [0;1mCREATE TABLE `hosts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `ip` varchar(255), `nombre` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (33.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20140930143957')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `hosts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `hosts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 09:56:21) [GET]
+  [4;36;1mHost Load (0.3ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#new (for 127.0.0.1 at 2014-09-30 09:56:27) [GET]
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/hosts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#create (for 127.0.0.1 at 2014-09-30 09:56:38) [POST]
+  Parameters: {"host"=>{"ip"=>"187.188.33.34", "nombre"=>"Tapachula"}, "authenticity_token"=>"nWEzJrlO0C/ckRP0m93uFTGOLkVmL2IIauJgtM3+A4M=", "commit"=>"Create"}
+  [4;36;1mHost Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mHost Create (0.2ms)[0m   [0;1mINSERT INTO `hosts` (`updated_at`, `ip`, `created_at`, `nombre`) VALUES('2014-09-30 14:56:38', '187.188.33.34', '2014-09-30 14:56:38', 'Tapachula')[0m
+  [4;35;1mSQL (95.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/hosts/1
+Completed in 104ms (DB: 97) | 302 Found [http://localhost/hosts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#show (for 127.0.0.1 at 2014-09-30 09:56:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.2ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/hosts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 09:56:40) [GET]
+  [4;36;1mHost Load (0.4ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/hosts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update (for 127.0.0.1 at 2014-09-30 09:58:09) [PUT]
+  Parameters: {"host"=>{"ip"=>"187.188.174.78", "nombre"=>"tapachula"}, "id"=>"tapachula"}
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.2ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Host with ID=tapachula):
+  app/controllers/hosts_controller.rb:64:in `update'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (78.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#new (for 127.0.0.1 at 2014-09-30 10:01:18) [GET]
+  [4;36;1mHost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/hosts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update_record (for 127.0.0.1 at 2014-09-30 10:03:39) [PUT]
+  Parameters: {"host"=>"tapachula"}
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mHost Load (14.9ms)[0m   [0;1mSELECT * FROM `hosts` WHERE (`hosts`.`nombre` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.update_attributes):
+  app/controllers/hosts_controller.rb:67:in `update_record'
+  app/controllers/hosts_controller.rb:66:in `update_record'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (24.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 10:04:09) [GET]
+  [4;36;1mHost Load (0.2ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update_record (for 127.0.0.1 at 2014-09-30 10:04:13) [PUT]
+  Parameters: {"host"=>"tapachula"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 10:05:18) [GET]
+  [4;36;1mHost Load (0.1ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update_record (for 127.0.0.1 at 2014-09-30 10:05:22) [PUT]
+  Parameters: {"host"=>"tapachula"}
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (9.2ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`nombre` = 'tapachula') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `stringify_keys!' for "tapachula":String):
+  app/controllers/hosts_controller.rb:67:in `update_record'
+  app/controllers/hosts_controller.rb:66:in `update_record'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (28.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 10:07:04) [GET]
+  [4;36;1mHost Load (0.1ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#edit (for 127.0.0.1 at 2014-09-30 10:07:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.1ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/edit
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/hosts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update (for 127.0.0.1 at 2014-09-30 10:07:14) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"nWEzJrlO0C/ckRP0m93uFTGOLkVmL2IIauJgtM3+A4M=", "host"=>{"ip"=>"187.188.33.34", "nombre"=>"tapachula"}, "id"=>"1"}
+
+ActionController::UnknownAction (No action responded to update. Actions: create, destroy, edit, index, new, show, and update_record):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 10:09:39) [GET]
+  [4;36;1mHost Load (0.1ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 34ms (View: 27, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update_json (for 127.0.0.1 at 2014-09-30 10:09:58) [PUT]
+  Parameters: {"host"=>{"nombre"=>"tapachula", "ip"=>"187.188.174.78"}, "id"=>"tapachula"}
+  [4;36;1mHost Load (0.0ms)[0m   [0;1mMysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n')  LIMIT 1):
+  app/controllers/hosts_controller.rb:77:in `update_json'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (29.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update_json (for 127.0.0.1 at 2014-09-30 10:12:45) [PUT]
+  Parameters: {"host"=>{"nombre"=>"tapachula", "ip"=>"187.188.174.78"}, "id"=>"tapachula"}
+  [4;35;1mHost Load (0.0ms)[0m   [0mMysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n')  LIMIT 1):
+  app/controllers/hosts_controller.rb:78:in `update_json'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (81.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update_json (for 127.0.0.1 at 2014-09-30 10:16:23) [PUT]
+  Parameters: {"host"=>{"nombre"=>"tapachula", "ip"=>"187.188.174.78"}, "id"=>"tapachula"}
+  [4;36;1mHost Load (0.0ms)[0m   [0;1mMysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n')  LIMIT 1):
+  app/controllers/hosts_controller.rb:78:in `update_json'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update_json (for 127.0.0.1 at 2014-09-30 10:16:29) [PUT]
+  Parameters: {"host"=>{"nombre"=>"tapachula", "ip"=>"187.188.174.78"}, "id"=>"tapachula"}
+  [4;35;1mHost Load (0.0ms)[0m   [0mMysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n')  LIMIT 1):
+  app/controllers/hosts_controller.rb:78:in `update_json'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (32.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update_json (for 127.0.0.1 at 2014-09-30 10:17:34) [PUT]
+  Parameters: {"host"=>{"nombre"=>"tapachula", "ip"=>"187.188.174.78"}, "id"=>"tapachula"}
+  [4;36;1mHost Load (0.0ms)[0m   [0;1mMysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n')  LIMIT 1):
+  app/controllers/hosts_controller.rb:78:in `update_json'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (82.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update_json (for 127.0.0.1 at 2014-09-30 10:17:46) [PUT]
+  Parameters: {"host"=>{"nombre"=>"tapachula", "ip"=>"187.188.174.78"}, "id"=>"tapachula"}
+  [4;35;1mHost Load (0.0ms)[0m   [0mMysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n') LIMIT 1[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Operand should contain 1 column(s): SELECT * FROM `hosts` WHERE (nombre = '--- \n- nombre\n- tapachula\n','--- \n- ip\n- 187.188.174.78\n')  LIMIT 1):
+  app/controllers/hosts_controller.rb:78:in `update_json'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162
+
+Rendered rescues/_trace (29.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update (for 127.0.0.1 at 2014-09-30 10:18:08) [PUT]
+  Parameters: {"host"=>{"nombre"=>"tapachula", "ip"=>"187.188.174.78"}, "id"=>"tapachula"}
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.1ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`nombre` = 'tapachula') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHost Update (75.1ms)[0m   [0mUPDATE `hosts` SET `nombre` = 'tapachula', `updated_at` = '2014-09-30 15:18:08', `ip` = '187.188.174.78' WHERE `id` = 1[0m
+  [4;36;1mSQL (33.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 120ms (View: 0, DB: 109) | 200 OK [http://localhost/hosts/update/tapachula]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 10:18:22) [GET]
+  [4;35;1mHost Load (1.1ms)[0m   [0mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;36;1mHost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+Completed in 13ms (View: 7, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#edit (for 127.0.0.1 at 2014-09-30 10:18:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHost Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mHost Load (0.2ms)[0m   [0;1mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/edit
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/hosts/1/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update (for 127.0.0.1 at 2014-09-30 10:18:37) [PUT]
+  Parameters: {"host"=>{"nombre"=>"tapachula", "ip"=>"187.188.174.99"}, "id"=>"tapachula"}
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mHost Load (0.2ms)[0m   [0;1mSELECT * FROM `hosts` WHERE (`hosts`.`nombre` = 'tapachula') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHost Update (0.2ms)[0m   [0;1mUPDATE `hosts` SET `updated_at` = '2014-09-30 15:18:37', `ip` = '187.188.174.99' WHERE `id` = 1[0m
+  [4;35;1mSQL (62.5ms)[0m   [0mCOMMIT[0m
+Completed in 70ms (View: 0, DB: 64) | 200 OK [http://localhost/hosts/update/tapachula]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 10:18:42) [GET]
+  [4;36;1mHost Load (0.3ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#edit (for 127.0.0.1 at 2014-09-30 10:18:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mHost Load (0.2ms)[0m   [0mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 1) [0m
+Rendering template within layouts/hosts
+Rendering hosts/edit
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/hosts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 10:19:45) [GET]
+  [4;36;1mHost Load (0.1ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#new (for 127.0.0.1 at 2014-09-30 10:19:51) [GET]
+  [4;36;1mHost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/hosts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#create (for 127.0.0.1 at 2014-09-30 10:20:15) [POST]
+  Parameters: {"authenticity_token"=>"nWEzJrlO0C/ckRP0m93uFTGOLkVmL2IIauJgtM3+A4M=", "host"=>{"nombre"=>"villaflores", "ip"=>"187.45.23.23"}, "commit"=>"Create"}
+  [4;35;1mHost Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mHost Create (0.2ms)[0m   [0mINSERT INTO `hosts` (`updated_at`, `created_at`, `nombre`, `ip`) VALUES('2014-09-30 15:20:15', '2014-09-30 15:20:15', 'villaflores', '187.45.23.23')[0m
+  [4;36;1mSQL (79.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/hosts/2
+Completed in 88ms (DB: 81) | 302 Found [http://localhost/hosts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#show (for 127.0.0.1 at 2014-09-30 10:20:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mHost Load (0.2ms)[0m   [0;1mSELECT * FROM `hosts` WHERE (`hosts`.`id` = 2) [0m
+Rendering template within layouts/hosts
+Rendering hosts/show
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/hosts/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 10:20:17) [GET]
+  [4;35;1mHost Load (0.2ms)[0m   [0mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;36;1mHost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/hosts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2014-09-30 10:20:23) [GET]
+  [4;35;1mHost Load (0.1ms)[0m   [0mSELECT * FROM `hosts` [0m
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/hosts.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index to json (for 127.0.0.1 at 2014-09-30 10:20:34) [GET]
+  [4;35;1mHost Load (0.1ms)[0m   [0mSELECT * FROM `hosts` [0m
+  [4;36;1mHost Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://localhost/hosts.json]
+  [4;35;1mSQL (139.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2014-09-30 10:21:12) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 29ms (View: 29, DB: 140) | 401 Unauthorized [http://localhost/hosts.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#update (for 127.0.0.1 at 2014-09-30 10:22:07) [PUT]
+  Parameters: {"host"=>{"nombre"=>"villaflores", "ip"=>"187.188.174.78"}, "id"=>"villaflores"}
+  [4;35;1mHost Columns (17.5ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mHost Load (18.7ms)[0m   [0;1mSELECT * FROM `hosts` WHERE (`hosts`.`nombre` = 'villaflores') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mHost Update (0.2ms)[0m   [0;1mUPDATE `hosts` SET `updated_at` = '2014-09-30 15:22:07', `ip` = '187.188.174.78' WHERE `id` = 2[0m
+  [4;35;1mSQL (37.9ms)[0m   [0mCOMMIT[0m
+Completed in 118ms (View: 0, DB: 74) | 200 OK [http://localhost/hosts/update/villaflores]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index to xml (for 127.0.0.1 at 2014-09-30 10:22:11) [GET]
+  [4;36;1mHost Load (0.2ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/hosts.xml]
+  [4;36;1mSQL (24.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (17.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#new (for 127.0.0.1 at 2014-09-30 10:44:44) [GET]
+  [4;36;1mHost Columns (91.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 298ms (View: 142, DB: 133) | 200 OK [http://localhost/hosts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#new (for 127.0.0.1 at 2014-09-30 10:44:49) [GET]
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/hosts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 10:45:17) [GET]
+  [4;36;1mHost Load (34.7ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 47ms (View: 8, DB: 35) | 200 OK [http://localhost/hosts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#new (for 127.0.0.1 at 2014-09-30 11:04:26) [GET]
+  [4;36;1mHost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+Rendering template within layouts/hosts
+Rendering hosts/new
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/hosts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 11:24:06) [GET]
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 34ms (View: 34, DB: 0) | 401 Unauthorized [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2014-09-30 11:24:16) [GET]
+  [4;36;1mHost Load (0.2ms)[0m   [0;1mSELECT * FROM `hosts` [0m
+Rendering template within layouts/hosts
+Rendering hosts/index
+  [4;35;1mHost Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+Completed in 47ms (View: 42, DB: 1) | 200 OK [http://localhost/]

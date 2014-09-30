@@ -1,0 +1,6 @@
+## Configuraciones.
+hostname: chicago
+server_hostname: main_server.mydomain
+server_user: user
+server_password: secret
+server_port: 3000
