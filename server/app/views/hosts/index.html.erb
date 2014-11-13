@@ -11,7 +11,7 @@
   <tr>
     <td><%=h host.ip %></td>
     <td><%=h host.nombre %></td>
-    <td><%=h host.updated_at %></td>
+    <td><%=h host.updated_at.strftime("%Y/%m/%d - %H:%M:%S %p") %></td>
     <td><%= button_to 'Show', host %></td>
     <td><%= button_to 'Edit', edit_host_path(host) %></td>
     <td><%= button_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>
