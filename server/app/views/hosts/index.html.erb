@@ -4,15 +4,17 @@
   <tr>
     <th>Ip</th>
     <th>Nombre</th>
+    <th>Last updated</th>
   </tr>
 
 <% @hosts.each do |host| %>
   <tr>
     <td><%=h host.ip %></td>
     <td><%=h host.nombre %></td>
-    <td><%= link_to 'Show', host %></td>
-    <td><%= link_to 'Edit', edit_host_path(host) %></td>
-    <td><%= link_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h host.updated_at %></td>
+    <td><%= button_to 'Show', host %></td>
+    <td><%= button_to 'Edit', edit_host_path(host) %></td>
+    <td><%= button_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
