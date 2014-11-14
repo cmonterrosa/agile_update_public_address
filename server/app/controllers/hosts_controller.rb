@@ -63,7 +63,7 @@ class HostsController < ApplicationController
     @host = Host.find_by_nombre(params[:id])
     respond_to do |format|
       if @host.update_attributes(params[:host])
-        @host.update
+        @host.save
         puts("#{@host} Updated at => #{Time.now}")
         format.html { redirect_to(@host, :notice => 'Host was successfully updated.') }
         format.xml  { head :ok }
