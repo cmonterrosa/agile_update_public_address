@@ -23,6 +23,6 @@ def external_ip
 end
 
 ### Main loop ##
-@config = YAML.load_file("settings.yml")
+@config = YAML.load_file("#{File.dirname(__FILE__)}/settings.yml")
 client_hostname,server_hostname,server_port,server_user,server_password =@config['hostname'], @config['server_hostname'],@config['server_port'], @config['server_user'], @config['server_password']
 system("curl -u #{server_user}:#{server_password} -H 'Accept: application/json' -H 'Content-type: application/json' -X PUT -d '{'host' : {'nombre': '#{client_hostname}', 'ip': '#{external_ip}'}}' http://#{server_hostname}:#{server_port}/hosts/update/#{client_hostname}")
