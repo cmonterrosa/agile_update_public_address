@@ -62,9 +62,8 @@ class HostsController < ApplicationController
   def update
     @host = Host.find(:first, :conditions => ["nombre = ?", params[:id]])
     respond_to do |format|
-      if @host.update_attributes(params[:host])
-        @host.save
-        logger.info("#{Time.now} Updated Host ##{@host.nombre}!")
+      if @host.update_attributes!(params[:host])
+        logger.info("=> #{Time.now} Updated Host ##{@host.nombre}!")
         format.html { redirect_to(@host, :notice => 'Host was successfully updated.') }
         format.xml  { head :ok }
         format.json  { head :ok }
