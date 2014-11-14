@@ -60,11 +60,11 @@ class HostsController < ApplicationController
   # PUT /hosts/1
   # PUT /hosts/1.xml
   def update
-    @host = Host.find_by_nombre(params[:id])
+    @host = Host.find(:first, :conditions => ["nombre = ?", params[:id]])
     respond_to do |format|
       if @host.update_attributes(params[:host])
         @host.save
-        puts("#{@host} Updated at => #{Time.now}")
+        logger.info("#{Time.now} Updated Host ##{@host.nombre}!")
         format.html { redirect_to(@host, :notice => 'Host was successfully updated.') }
         format.xml  { head :ok }
         format.json  { head :ok }
