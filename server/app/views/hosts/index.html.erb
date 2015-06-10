@@ -1,10 +1,11 @@
-<h1>Listing hosts</h1>
+<h1>Hosts</h1>
 
-<table>
+<table class="mytable">
   <tr>
-    <th>Ip</th>
-    <th>Nombre</th>
-    <th>Last updated</th>
+    <td>IP</td>
+    <td>Host</td>
+    <td>Última modificación</td>
+    <td colspan="3">&nbsp;</td>
   </tr>
 
 <% @hosts.each do |host| %>
@@ -12,13 +13,13 @@
     <td><%=h host.ip %></td>
     <td><%=h host.nombre %></td>
     <td><%=h host.updated_at.strftime("%Y/%m/%d - %H:%M:%S %p") %></td>
-    <td><%= button_to 'Show', host %></td>
-    <td><%= button_to 'Edit', edit_host_path(host) %></td>
-    <td><%= button_to 'Destroy', host, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Mostrar', host %></td>
+    <td><%= link_to 'Editar', edit_host_path(host) %></td>
+    <td><%= link_to 'Eliminar', host, :confirm => '¿Esta seguro que desea eliminarlo?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New host', new_host_path %>
+<%= link_to 'Actualizar listado', :action => "index" %>  | <%= link_to 'Nuevo host', new_host_path %>
