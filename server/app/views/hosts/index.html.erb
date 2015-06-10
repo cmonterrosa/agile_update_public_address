@@ -2,16 +2,16 @@
 
 <table class="mytable">
   <tr>
-    <td>IP</td>
     <td>Host</td>
+    <td>IP</td>
     <td>Última modificación</td>
     <td colspan="3">&nbsp;</td>
   </tr>
 
 <% @hosts.each do |host| %>
   <tr>
-    <td><%=h host.ip %></td>
     <td><%=h host.nombre %></td>
+    <td><%=h host.ip %></td>
     <td><%=h host.updated_at.strftime("%Y/%m/%d - %H:%M:%S %p") %></td>
     <td><%= link_to 'Mostrar', host %></td>
     <td><%= link_to 'Editar', edit_host_path(host) %></td>

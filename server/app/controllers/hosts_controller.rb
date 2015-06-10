@@ -3,7 +3,7 @@ class HostsController < ApplicationController
   # GET /hosts
   # GET /hosts.xml
   def index
-    @hosts = Host.all
+    @hosts = Host.find(:all, :order => "nombre")
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @hosts }
