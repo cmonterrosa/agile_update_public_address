@@ -8,7 +8,7 @@ class PublicController < ApplicationController
 
  private
   def protect
-      if request.remote_ip !~ /^172.\d{2,3}.\d{2,3}.\d{2,3}$/
+      unless is_local(request.remote_ip)
           render :text => "No tiene permisos para acceder"
           return false
       end
