@@ -14,7 +14,8 @@ class HostsController < ApplicationController
   # GET /hosts/1
   # GET /hosts/1.xml
   def show
-    @host = Host.find(params[:id])
+    @host = Host.find(params[:id]) if params[:id]=~/^\d{1,6}$/
+    @host ||= Host.find_by_nombre(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
